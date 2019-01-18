@@ -1,27 +1,33 @@
-function bubbleSort(array) {
-    let bool = true;
-    if (array.length !== 0 && array.length !== 1) {
-        if(!bool){
-            break;
-        }
-        for (let i = 0; i < array.length; i++) {
-            for (let j = 0; j < array.length - 1; j++) {
-                if (array[j] > array[j + 1]) {
-                    // swap the two
-                    const temp = array[j]
-                    array[j]= array[j+1]
-                    array[j+1]=temp
-                }
-                else if( ){
 
-                }
-                
-            }
-        }
-    }
-    return array;
-}
 
-// var b = list[y];
-// list[y] = list[x];
-// list[x] = b;
+
+
+//ITERATIVE VERSION (Just uncomment to run!)
+
+// function bubbleSort(array) {
+//     console.log(array);
+//     let counter;
+//     let searchArea = array.length - 1;
+//     if (array.length !== 0 && array.length !== 1) {
+//         for (let i = 0; i < array.length; i++) {
+//             counter = 0;
+//             for (let j = 0; j < searchArea; j++) {
+//                 if (array[j] > array[j + 1]) {
+//                     counter++
+//                     const temp = array[j];
+//                     array[j] = array[j + 1];
+//                     array[j + 1] = temp;
+//                 }
+//             }
+//             console.log(array);
+//             searchArea--;
+//             if (counter === 0) {
+//                 break;
+//             }
+//         }
+//     }
+//     return array;
+// }
+
+
+bubbleSort([5, 6, 1, 8, 4, 3, 9, 2]);
